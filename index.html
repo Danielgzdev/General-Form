@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website Form</title>
+        <meta name="Author" content="cdg">
+        <meta name="description" content="Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="caja1">
+            <form method="post" action="login.php">
+            <div class="formtlo">Welcome</div>
+            <div class="ub1">&#128273; User</div>
+            <input type="text" name="txtusuario">
+            <div class="ub1">&#128274; Password</div>
+            <input type="password" name="txtpassword" id="txtpassword">
+            <div class="ub1">
+            <input type="checkbox" onclick="verpassword()" >Show Password
+            </div>
+            <div class="ub1">Role</div>
+            <select name="rol">
+            <option value="0" style="display:none;"><label>Selector</label></option>
+            <option value="Usuario">User</option>
+            <option value="Admin">Administrator</option>
+            </select>
+            <div align="center">
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+            </div>
+            </form>
+            </div>
+    </body>
+</html>
